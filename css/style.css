@@ -5,3 +5,108 @@
 }
 
 /* GENERAL */
+
+.container{
+  padding-left: 50px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.cta{
+  border: 1px solid white;
+  padding: 5px 15px;
+  font-size: 0.5rem;
+  color: #ffffff;
+  border-radius: 20px;
+  
+}
+
+
+
+.layer a{
+  text-align: righ;
+}
+
+/* UTILITY */
+
+.flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap
+}
+
+.justify-content{
+  justify-content: space-between;
+}
+
+.align-item{
+  align-items: center;
+}
+
+.columm{
+  flex-direction: column;
+}
+/* MAIN */
+main{
+  height: calc(100vh - 80px);
+  background-color: #141922;
+  overflow-y: scroll;
+}
+
+/* VERTICAL BAR */
+nav{
+  width: 50px;
+  height: calc(100vh - 80px);
+  background-color: #000000;
+  position: fixed;
+}
+
+/* CTA */
+.layer{
+  height: 80px;
+  width: 100%;
+  
+  background-color: rgba(8, 11, 18, 0.6);
+  position: sticky;
+  top: 0;
+  right: 0;
+  
+  
+
+}
+
+/* CATEGORIES MUSIC */
+.all-content ul{
+  list-style: none;
+}
+
+.all-content ul li a{
+  color: #85878b;
+}
+
+/* ALBUM */
+.col{
+  width: calc(100% / 2);
+  background-color: antiquewhite;
+  height: 40vw;
+  border: 1px solid red;/*DEBUG DA ELIMINARE*/
+  padding: 10px;
+}
+
+.card{
+  background-color: aquamarine;
+  height: 100%;
+}
+/* <!-- FOOTER: Music Playback Bar --> */
+footer{
+  height: 80px;
+  background-color:#282828;
+  position: fixed;
+  width: 100%;
+}
