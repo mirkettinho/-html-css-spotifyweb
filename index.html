@@ -16,19 +16,44 @@
 
     <!-- VERTICAL BAR -->
     <nav class="flex">
-      <div class="vertical-bar">
+      <div class="vertical-bar columm">
 
         <div class="top-bar">
-          <img src="img/logo-small.svg" alt="">
-          <img src="img/home.svg" alt="">
-          <img src="img/search.svg" alt="">
-          <img src="img/libreria.svg" alt="">
+
+          <div class="flex">
+            <img class="logo-small" src="img/logo-small.svg" alt="logo spotify">
+            <img class="logo-big" src="img/logo.svg" alt="logo e nome">
+          </div>
+
+          <div class="flex">
+            <img src="img/home.svg" alt="home">
+            <a class="text-bar" href="#">Home</a>
+          </div>
+
+          <div class="flex">
+            <img src="img/search.svg" alt="cerca">
+            <a class="text-bar" href="#">Cerca</a>
+          </div>
+
+          <div class="flex">
+            <img src="img/libreria.svg" alt="libreria">
+            <a class="text-bar" href="#">La tua libreria</a>
+          </div>
         </div>
 
         <div class="bottom-bar">
-          <img src="img/download.svg" alt="">
-          <img src="img/profile.svg" alt="">
-        </div>
+
+          <div class="flex">
+            <img src="img/download.svg" alt="download">
+            <a class="text-bar" href="#">Installa app</a>
+          </div>
+
+          <div class="flex">
+            <img src="img/profile.svg" alt="profilo">
+            <a class="text-bar" href="#">John doe</a>
+          </div>
+        </div> 
+
       </div>
     </nav>
 
@@ -52,48 +77,60 @@
 
       <!-- ALBUM -->
       <div class="music">
-        <h3>Recently played</h3>
+        <h3 class="pd-left">Recently played</h3>
         <div class="row flex wrap">
 
           <!-- ALBUM 1 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/metal_lifting.jpg" alt="">
+              <h5>Heavy Metal</h5>
+              <h6>Subtitle</h6>
             </div>
           </div>
 
           <!-- ALBUM 2 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/stranger.jpeg" alt="">
+              <h5>Stranger things, Vol. 1(a Netflix Original Series Soundtrack)</h5>
+              <h6>Kyle Dixon & Michael Stein</h6>
             </div>
           </div>
 
           <!-- ALBUM 3 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/aquietplace.jpeg" alt="">
+              <h5>A quiet place</h5>
+              <h6>Subtitle</h6>
             </div>
           </div>
 
           <!-- ALBUM 4 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/split.jpeg" alt="">
+              <h5>Split</h5>
+              <h6>Subtitle</h6>
             </div>
           </div>
 
           <!-- ALBUM 5 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/cure.jpeg" alt="">
+              <h5>Cure</h5>
+              <h6>Subtitle</h6>
             </div>
           </div>
 
           <!-- ALBUM 6 -->
           <div class="col">
             <div class="card">
-
+              <img src="img/sinister.jpeg" alt="">
+              <h5>Sinister</h5>
+              <h6>Subtitle</h6>
             </div>
           </div>
 
@@ -103,44 +140,48 @@
 
       <!-- RANDOM MUSIC GENERATOR -->
       <div class="rmg">
-        <h3>Recently played</h3>
-        <h6>siummmmmmmmmm</h6>
+        <h3 class="pd-left">Creato per John Doe</h3>
+        <h6 class="pd-left">più ascolti, più accurati saranno i suggerimenti.</h6>
         <div class="row flex wrap">
 
           <!-- ALBUM 1 RANDOM  -->
           <div class="col">
             <div class="card">
-
+              <img src="img/radar.jpeg" alt="">
+              <h5>Release Radar</h5>
             </div>
           </div>
 
           <!-- ALBUM 2 RANDOM -->
           <div class="col">
             <div class="card">
-
+              <img src="img/mixdaily.jpeg" alt="">
+              <h5>Daily Mix 1</h5>
             </div>
           </div>
 
         </div>
       </div>
 
-
+      <!-- POPULAR ARTISTS -->
       <div class="popular-artists">
-        <h3>Recently played</h3>
-        <h6>siummmmmmmmmm</h6>
+        <h3 class="pd-left">Artisti più popolari</h3>
+        <h6 class="pd-left">più ascolti, più accurati saranno i suggerimenti.</h6>
         <div class="row flex wrap">
 
           <!-- ALBUM 1 POPULAR ARTISTS  -->
           <div class="col">
             <div class="card">
-
+              <img src="img/youg.jpeg" alt="">
+              <h5>Lana del Rey</h5>
             </div>
           </div>
 
           <!-- ALBUM 2 POPULAR ARTISTS  -->
           <div class="col">
             <div class="card">
-
+              <img src="img/einaudi.jpeg" alt="">
+              <h5>Ludovico Einaudi</h5>
             </div>
           </div>
       </div>
@@ -157,8 +198,31 @@
 
 
   <!-- FOOTER: Music Playback Bar -->
-  <footer>
-    ciao
+  <footer class="flex">
+
+    <!-- PLAYBACK BAR LEFT -->
+    <div class="left">
+      
+      <div class="track-image">
+        <img src="" alt="">
+      </div>
+
+      <div class="track-information">
+
+      </div>
+    </div>
+
+    <!-- PLAYBACK BAR CENTER -->
+    <div class="center">
+
+    </div>
+
+    <!-- PLAYBACK BAR RIGHT -->
+    <div class="right">
+
+    </div>
+
+
   </footer>
 </body>
 </html>
