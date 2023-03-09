@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
@@ -16,7 +17,7 @@
   <main class="flex">
 
     <!-- VERTICAL BAR -->
-    <nav class="flex">
+    <nav class="">
       <div class="vertical-bar columm">
 
         <!-- TOP BAR -->
@@ -29,7 +30,7 @@
 
           <div class="flex ">
             <img src="img/home.svg" alt="home">
-            <a class="text-bar" href="#">Home</a>
+            <a class="text-bar white" href="#">Home</a>
           </div>
 
           <div class="flex">
@@ -95,10 +96,10 @@
             <img class="size-xs" src="img/download.svg" alt="download">
             <a class="text-bar" href="#">Installa app</a>
           </div>
-
+          <hr>
           <div class="flex">
             <img class="profile-img" src="img/profile.svg" alt="profilo">
-            <a class="text-bar" href="#">John doe</a>
+            <a class="text-bar white" href="#">John doe</a>
           </div>
         </div> 
 
@@ -246,10 +247,63 @@
 
 
   <!-- FOOTER: Music Playback Bar -->
-  <footer class="flex">
+  <footer class="music-player">
 
 
+      <div class="song-bar">
 
+        <div class="song-info">
+
+          <div class="image-container">
+            <img src="img/player_left.jpg" alt="">
+          </div>
+
+          <div class="song-description">
+            <h5 class="title">Sinister</h5>
+            <h6 class="artist">Brano</h6>
+            <h6 class="artist">Nome</h6>
+          </div>
+        </div>
+
+        <div class="icons">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+
+      </div>
+
+
+      <div class="progress-controller">
+        <div class="control-buttons">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <i class="fas fa-play"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="progress-container">
+          <span>0:30</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <span>3:00</span>
+        </div>
+      </div>
+
+      
+      <div class="right-bar">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-display"></i>
+        <div class="volume-bar">
+          <i class="fa-solid fa-volume-high"></i>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+
+        </div>
+      </div>
+  
+  
   </footer>
 </body>
 </html>

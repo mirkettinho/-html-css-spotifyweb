@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /* GENERAL */
 
 .container{
@@ -19,17 +20,23 @@ a{
 .cta{
   border: 1px solid white;
   padding: 10px 20px;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: #ffffff;
+  font-weight: bold;
   border-radius: 20px;
   
 }
 
-
-
-.layer a{
-  text-align: righ;
+.white{
+  color:#ffffff;
+  font-size: 0.6rem;
+  font-weight: bold;
 }
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /* UTILITY */
 
@@ -64,7 +71,7 @@ a{
 
 /* MAIN */
 main{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
   background-color: #141922;
   overflow-y: scroll;
 }
@@ -74,7 +81,7 @@ main{
 /* VERTICAL BAR */
 nav{
   width: 50px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
   background-color: #000000;
   position: fixed;
   justify-content: center;
@@ -87,7 +94,8 @@ nav{
 }
 
 .vertical-bar .flex{
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .vertical-bar .flex h5{
@@ -119,9 +127,10 @@ nav{
   padding-bottom: 10px;
 }
 
-.vertical-bar a{
+.vertical-bar a:not(.white){
   font-size: 0.6rem;
   color: #85878b;
+  font-weight: bold;
 }
 .size-xs{
   width: 10px;
@@ -132,9 +141,11 @@ nav{
   border-radius: 50%;
 }
 
-.logo-big{
+.vertical-bar .logo-big{
   display: none;
+  width: 120px;
 }
+
 .text-bar{
   display: none;
 }
@@ -181,6 +192,7 @@ nav{
 
 .all-content ul li a{
   color: #85878b;
+  font-weight: bold;
 }
 
 .categories li a{
@@ -211,7 +223,8 @@ nav{
 .rmg h3,
 .rmg h5,
 .popular-artists h3,
-.popular-artists h5{
+.popular-artists h5,
+.song-description h5{
   color: #ffffff;
 }
 
@@ -225,7 +238,9 @@ nav{
 
 .music h6,
 .rmg h6,
-.popular-artists h6{
+.popular-artists h6,
+.song-description h6,
+.icons i{
   color: #85878b;
 }
 
@@ -261,18 +276,130 @@ nav{
 
 
 /* <!-- FOOTER: Music Playback Bar --> */
-footer{
-  height: 80px;
-  background-color:#282828;
-  position: fixed;
+
+.music-player{
+  height: 90px;
   width: 100%;
+  background-color:#282828;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 16px;
 }
 
+.song-bar{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 25vw;
+}
 
+.song-info{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.image-container{
+  width: 30px;
+  flex-shrink: 0;
+}
 
+.image-container img{
+  width: 100%;
+  object-fit: cover;
+}
 
+.progress-controller{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
+.control-buttons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+.play-pause{
+  display: inline-block;
+  padding: 16px;
+  color: black;
+  border-radius: 50%;
+}
+
+.progress-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.progress-bar{
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #595959;
+}
+
+.progress{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #bfbfbf;
+}
+
+.progress-bar:hover .progress{
+  background-color: greenyellow;
+}
+
+.progress-bar:hover .progress::after{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: -5px;
+  border-radius: 50%;
+  background-color: aqua;
+  transform: translate(50%, calc(2px -50%));
+}
+
+.right-bar{
+  position: absolute;
+  right: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.volume-bar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.volume-bar .progress-bar{
+  width: 96px;
+}
+
+.volume-bar .progress-bar:hover .progress::after{
+  width: 15px;
+}
+
+.progress-controller i,
+.progress-controller span,
+.right-bar i{
+  color: #ffffff;
+}
 /* MEDIA QUERY */
 
 
@@ -283,17 +410,17 @@ footer{
   }
   nav{
     width: 200px;
-    justify-content: normal;
-    padding: 10px 20px;
+    padding: 10px 16px;
   }
   .layer{
-    width: calc(100vw - 200px);
+    left: 200px;
   }
   .text-bar{
     display: inline-block;
   }
-  .logo-big{
+  .vertical-bar .logo-big{
     display: block;
+    width: 120px;
   }
   .logo-small{
     display: none;
