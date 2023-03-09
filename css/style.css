@@ -18,7 +18,7 @@ a{
 
 .cta{
   border: 1px solid white;
-  padding: 5px 15px;
+  padding: 10px 20px;
   font-size: 0.5rem;
   color: #ffffff;
   border-radius: 20px;
@@ -43,6 +43,10 @@ a{
 
 .justify-content{
   justify-content: space-between;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .align-item{
@@ -81,9 +85,51 @@ nav{
   justify-content: space-between;
   
 }
-.vertical-bar img:not(.logo-big){
-  display: inline-block;
+
+.vertical-bar .flex{
+  justify-content: center;
+}
+
+.vertical-bar .flex h5{
+  color: #ffffff;
+}
+
+.vertical-bar .playlist h5{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.vertical-bar .playlist .new-playlist .name-playlist{
+  padding-top: 10px;
+  color: red;
+}
+
+.vertical-bar img{
   width: 20px;
+}
+
+.logo-small{
+  display: inline-block;
+}
+
+.logo-big{
+  display: none;
+}
+.vertical-bar img{
+  padding-bottom: 10px;
+}
+
+.vertical-bar a{
+  font-size: 0.6rem;
+  color: #85878b;
+}
+.size-xs{
+  width: 10px;
+}
+
+.profile-img{
+  background-color: #808080;
+  border-radius: 50%;
 }
 
 .logo-big{
@@ -93,12 +139,22 @@ nav{
   display: none;
 }
 
+.playlist{
+  color: #ffffff;
+}
 
+.playlist i{
+  background-color: #9b9b9b;
+  color: #000000;
+  padding: 8px;
+  font-size: 20px;
+  color: ;
+}
 /* CTA */
 .layer{
   height: 80px;
   width: 100%;
-  background-color: rgba(8, 11, 18, 0.6);
+  background-color: rgba(8, 11, 18, 0.9);
   position: sticky;
   top: 0;
   right: 0;
@@ -109,11 +165,13 @@ nav{
   position: absolute;
   right: 0;
   top: 30px;
+  
 }
 
 /* CATEGORIES MUSIC */
 .all-content ul{
   list-style: none;
+  justify-content: center;
 }
 
 .all-content ul li{
@@ -144,7 +202,7 @@ nav{
   height: 100%;
 }
 
-.music h3,{
+.music h3{
   padding-bottom: 20px;
 }
 
@@ -162,6 +220,7 @@ nav{
 .rmg h5,
 .popular-artists h5{
   text-align: center;
+  padding-top: 4px;
 }
 
 .music h6,
@@ -169,6 +228,12 @@ nav{
 .popular-artists h6{
   color: #85878b;
 }
+
+.rmg h6,
+.popular-artists h6{
+  padding-top: 5px;
+}
+
 .music .col .card img,
 .rmg .col .card img,
 .popular-artists .col .card img{
@@ -203,24 +268,6 @@ footer{
   width: 100%;
 }
 
-.left{
-  width: 25vw;
-  height: 100%;
-  background-color: red;
-}
-
-.right{
-  width: 25vw;
-  height: 100%;
-  background-color: purple;
-}
-
-.center{
-  width: 50vw;
-  height: 100%;
-  background-color: coral;
-}
-
 
 
 
@@ -236,6 +283,8 @@ footer{
   }
   nav{
     width: 200px;
+    justify-content: normal;
+    padding: 10px 20px;
   }
   .layer{
     width: calc(100vw - 200px);
@@ -249,3 +298,27 @@ footer{
   .logo-small{
     display: none;
   }
+  .categories li a{
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+}
+
+
+ /* MD DEVICE */
+@media screen and (min-width: 768px){
+  .col{
+    width: calc(100% / 4);
+  }
+}
+
+
+
+ /* LG DEVICE */
+ @media screen and (min-width: 992px){
+  .col{
+    width: calc(100% / 6);
+  }
+}
